@@ -93,3 +93,14 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 	font-family: 'Montserrat', Helvetica, sans-serif; }
 
 
+.social-links a {
+	font-size: 14px;
+	color: #696969;
+	text-decoration: none;
+	margin-left: 10px;	}
+
+.social-links a i {
+	margin-right: 8px;	}
+
+.social-links a:hover {
+	color: #0088cc;	}
