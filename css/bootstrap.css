@@ -369,7 +369,7 @@ img {
 }
 
 .img-circle {
-  border-radius: 50%;
+  border-radius: 0%;
 }
 
 hr {
@@ -3921,8 +3921,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  color: #ffffff;
-  background-color: #428bca;
+  /* color: #ffffff;
+  background-color: #428bca; */
+  text-decoration: underline;
 }
 
 .nav-stacked > li {
