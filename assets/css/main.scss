@@ -41,3 +41,14 @@
     "vendor/font-awesome/brands",
     "vendor/magnific-popup/magnific-popup"
 ;
+
+.venue-pill {
+  display: inline-block;
+  background-color: #42b6f5; /* light blue, matches your image */
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 2px 8px;
+  font-size: 0.85em;
+  margin-right: 5px;
+}
