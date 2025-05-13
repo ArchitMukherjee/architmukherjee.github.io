@@ -11,7 +11,7 @@ I am a Research Engineer at the School of Computation and Information Systems, S
 
 Currently I am working with Spiking Neural Networks and their temporal dynamics. My areas of research interest are Ubiquitous Systems, Neuromorphic Computing, Embedded Systems and Robotics.
 
-### Highlights
+<!-- ### Highlights -->
 
 
 <!-- A data-driven personal website
