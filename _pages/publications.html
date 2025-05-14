@@ -22,7 +22,8 @@ author_profile: true
           {{ author }}{% unless forloop.last %}, {% endunless %}
         {% endif %}
       {% endfor %},
-      "<a href='{{ pub.url }}'>{{ pub.title }}</a>"
+      <!-- "<a href='{{ pub.url }}'>{{ pub.title }}</a>" -->
+      <a href="{{ pub.link }}" target="_blank" rel="noopener noreferrer">{{ pub.title }}</a>,
       {{ pub.venue_long }}, {{ pub.year }}
     </li>
   {% endfor %}
@@ -43,7 +44,8 @@ author_profile: true
           {{ author }}{% unless forloop.last %}, {% endunless %}
         {% endif %}
       {% endfor %},
-      "<a href='{{ pub.url }}'>{{ pub.title }}</a>"
+      <!-- "<a href='{{ pub.url }}'>{{ pub.title }}</a>" -->
+      <a href="{{ pub.link }}" target="_blank" rel="noopener noreferrer">{{ pub.title }}</a>,
       {{ pub.venue_long }}, {{ pub.year }}
     </li>
   {% endfor %}

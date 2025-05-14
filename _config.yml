@@ -23,7 +23,7 @@ repository               : "architmukherjee/architmukherjee.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "prof_pic.png"
   name             : "Archit Mukherjee"
   pronouns         : # example: "she/her"  
   bio              : "Research Engineer at SMU"
