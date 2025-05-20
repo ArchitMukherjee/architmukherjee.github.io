@@ -9,7 +9,7 @@ authors: Hemanth Sabbella*, Archit Mukherjee*, T Jeck Chuang, H Yee Low, Dong Ma
 highlight_authors: Archit Mukherjee*
 year: 2025
 category: workshop
-link: ""
+link: "https://sites.google.com/view/comorea25/accepted-papers?authuser=0"
 ---
 
 This paper presents a novel approach to improving the responsiveness of fall detection systems by leveraging Spiking Neural Networks (SNNs). The proposed system significantly reduces latency in detection while maintaining high accuracy, making it suitable for real-time health monitoring applications. The method was evaluated using benchmark datasets and demonstrated superior performance in comparison to traditional ANN-based approaches.
