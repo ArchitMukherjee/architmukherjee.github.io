@@ -1,15 +1,25 @@
 ---
 permalink: /
-title: "About Me"
+title: ""
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I am a Research Engineer at the School of Computation and Information Systems, Singapore Management University. 
+<!-- I am a Research Engineer at the School of Computation and Information Systems, Singapore Management University. 
 
-Currently I am working with Spiking Neural Networks and their temporal dynamics. My areas of research interest are Ubiquitous Systems, Neuromorphic Computing, Embedded Systems and Robotics.
+Currently I am working with Spiking Neural Networks and their temporal dynamics. My areas of research interest are Ubiquitous Systems, Neuromorphic Computing, Embedded Systems and Robotics. -->
+
+I am a Research Engineer at the <a href="https://computing.smu.edu.sg/people/staff/research-staffvisitor" target="_blank">School of Computing and Information Systems, Singapore Management University</a>, supervised by <a href="https://www.dongma.info/">Prof Dong Ma</a> and <a href="https://sites.google.com/view/archan-misra/home?authuser=0">Prof Archan Misra</a>. Currently working with Spiking Neural Networks and their temporal dynamics. My areas of research interest are Neuromorphic Computing, Ubiquitous Systems, Embedded Systems and Robotics.
+
+
+I received my BTech in Electronics and Communication from <a href="https://chennai.vit.ac.in/">Vellore Institute of Technology, Chennai</a>. During my bachelors, I interned at <a href="https://www.samsungprism.com/" target="_blank">Samsung R&D, Bangalore</a> where I worked on energy efficient and low latency models to convert flash photographs into ambient photographs. I also got a design patent registered which localized and mobilized an AGV using camera feed and fiducial markers (without any LiDARS). Moreover, I served as the Captain of <a href="https://technocrats-robotics.github.io/website/">Team Technocrats Robotics</a> where I designed an innovative communication system which fetched us the Innovation Award in IRDC 2021.
+
+
+In my free time, I like to do photography (check out @archit_mukherjee_), read books and sometimes go out for a run. 
+
+
 
 <!-- ### Highlights -->
 

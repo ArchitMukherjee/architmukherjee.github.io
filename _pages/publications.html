@@ -6,8 +6,7 @@ author_profile: true
 ---
 
 {% include base_path %}
-
-<h2>Conferences & Journals</h2>
+<!-- removed h2 conf heading -->
 <ul>
   {% assign conferences = site.publications | where: "category", "conference" | sort: "year" | reverse %}
   {% for pub in conferences %}
@@ -22,14 +21,12 @@ author_profile: true
           {{ author }}{% unless forloop.last %}, {% endunless %}
         {% endif %}
       {% endfor %},
-      <!-- "<a href='{{ pub.url }}'>{{ pub.title }}</a>" -->
       <a href="{{ pub.link }}" target="_blank" rel="noopener noreferrer">{{ pub.title }}</a>,
       {{ pub.venue_long }}, {{ pub.year }}
     </li>
   {% endfor %}
 </ul>
-
-<h2>Workshops</h2>
+<!-- removed h2 workshop heading -->
 <ul>
   {% assign workshops = site.publications | where: "category", "workshop" | sort: "year" | reverse %}
   {% for pub in workshops %}
@@ -44,7 +41,27 @@ author_profile: true
           {{ author }}{% unless forloop.last %}, {% endunless %}
         {% endif %}
       {% endfor %},
-      <!-- "<a href='{{ pub.url }}'>{{ pub.title }}</a>" -->
+      <a href="{{ pub.link }}" target="_blank" rel="noopener noreferrer">{{ pub.title }}</a>,
+      {{ pub.venue_long }}, {{ pub.year }}
+    </li>
+  {% endfor %}
+</ul>
+
+<!-- removed h2 patent heading -->
+<ul>
+  {% assign patent = site.publications | where: "category", "patent" | sort: "year" | reverse %}
+  {% for pub in patent %}
+    <li>
+      <span class="venue-pill">{{ pub.venue }}</span>
+      {% assign author_list = pub.authors | split: ", " %}
+      {% assign highlights = pub.highlight_authors | default: "" %}
+      {% for author in author_list %}
+        {% if highlights contains author %}
+          <strong>{{ author }}</strong>{% unless forloop.last %}, {% endunless %}
+        {% else %}
+          {{ author }}{% unless forloop.last %}, {% endunless %}
+        {% endif %}
+      {% endfor %},
       <a href="{{ pub.link }}" target="_blank" rel="noopener noreferrer">{{ pub.title }}</a>,
       {{ pub.venue_long }}, {{ pub.year }}
     </li>
