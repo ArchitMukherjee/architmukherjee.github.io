@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: ""
+title: "About Me"
 author_profile: true
 redirect_from: 
   - /about/
@@ -21,7 +21,44 @@ In my free time, I like to do photography (check out <a href="https://www.instag
 
 
 
-<!-- ### Highlights -->
+## News
+
+
+<!-- <ul>
+  <li><strong>01/2024:</strong> Received Certificate of Excellence at Samsung Prism!</li>
+  <li><strong>10/2022:</strong> Became the Captain of <a href="https://technocrats-robotics.github.io/website/" target="_blank">Team Technocrats Robotics</a></li>
+  <li><strong>03/2022:</strong> Received Meritorious Award for securing Department Rank 2 in the academic year 2021-22!</li>
+  <li><strong>09/2021:</strong> <a href="https://technocrats-robotics.github.io/website/" target="_blank">Team Technocrats Robotics</a> received the Innovation Award for Assistive Bot design in IRDC 2021!</li>
+  <li><strong>03/2021:</strong> Received Meritorious Award for securing Department Rank 7 in the academic year 2020-21!</li>
+</ul> -->
+
+
+<div style="line-height: 1.4;">
+
+  <div>📝 <em>2025.01 —</em> Workshop paper accepted at <a href="https://sites.google.com/view/comorea25/accepted-papers?authuser=0">CoMoRea'25</a> (PerCom 2025).</div>
+
+  <div>💼 <em>2024.12 —</em> Joined SMU SCIS as a Research Engineer.</div>
+
+  <div>📝 <em>2024.12 —</em> Published a journal paper in IEEE Access.</div>
+  
+  <div>🎓 <em>2024.08 —</em> Graduated BTech ECE from VIT Chennai (Dept Rank 6).</div>
+
+  <div>🏆 <em>2024.01 —</em> Received Certificate of Excellence, Samsung Prism.</div>
+
+  <div>💼 <em>2023.12 —</em> Joined SMU SCIS as Visiting Student Researcher.</div>
+
+  <div>👨‍✈️ <em>2022.10 —</em> Became Captain, Team Technocrats Robotics.</div>
+
+  <div>🏆 <em>2022.03 —</em> Awarded for securing Department Rank 2 (AY 2021–22).</div>
+
+  <div>🤖 <em>2021.09 —</em> Won Innovation Award at IRDC 2021.</div>
+
+  <div>🏆 <em>2021.03 —</em> Awarded for securing Department Rank 7 (AY 2020–21).</div>
+
+</div>
+
+
+
 
 
 <!-- A data-driven personal website

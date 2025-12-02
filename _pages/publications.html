@@ -8,6 +8,26 @@ author_profile: true
 {% include base_path %}
 <!-- removed h2 conf heading -->
 <ul>
+  {% assign journals = site.publications | where: "category", "journal" | sort: "year" | reverse %}
+  {% for pub in journals %}
+    <li>
+      <span class="venue-pill">{{ pub.venue }}</span>
+      {% assign author_list = pub.authors | split: ", " %}
+      {% assign highlights = pub.highlight_authors | default: "" %}
+      {% for author in author_list %}
+        {% if highlights contains author %}
+          <strong>{{ author }}</strong>{% unless forloop.last %}, {% endunless %}
+        {% else %}
+          {{ author }}{% unless forloop.last %}, {% endunless %}
+        {% endif %}
+      {% endfor %},
+      <a href="{{ pub.link }}" target="_blank" rel="noopener noreferrer">{{ pub.title }}</a>,
+      {{ pub.venue_long }}, {{ pub.year }}
+    </li>
+  {% endfor %}
+</ul>
+<!-- removed h2 conf heading -->
+<ul>
   {% assign conferences = site.publications | where: "category", "conference" | sort: "year" | reverse %}
   {% for pub in conferences %}
     <li>
