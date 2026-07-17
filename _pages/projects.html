@@ -5,10 +5,144 @@ permalink: /projects/
 author_profile: true
 ---
 
-{% include base_path %}
+<style>
+  .project-list {
+    display: grid;
+    gap: 1rem;
+    margin: 0;
+  }
 
+  .project-banner {
+    display: grid;
+    grid-template-columns: minmax(140px, 26%) 1fr;
+    gap: 1rem;
+    padding: 0.85rem;
+    border: 1px solid rgba(127, 127, 127, 0.25);
+    border-radius: 0.75rem;
+    background: rgba(127, 127, 127, 0.04);
+  }
 
-{% for post in site.projects %}
-  {% include archive-single.html %}
-{% endfor %}
+  .project-banner__media {
+    min-width: 0;
+  }
 
+  .project-banner__image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    background: rgba(127, 127, 127, 0.12);
+  }
+
+  .project-banner__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.75rem;
+    margin-top: 0.5rem;
+  }
+
+  .project-banner__links a {
+    font-size: 0.72em;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .project-banner__links a:hover {
+    text-decoration: underline;
+  }
+
+  .project-banner__title {
+    margin: 0 0 0.35rem;
+    font-size: 1rem;
+  }
+
+  .project-banner__description {
+    margin: 0;
+    font-size: 0.82rem;
+    line-height: 1.45;
+  }
+
+  .project-banner__keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    margin: 0.65rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .project-banner__keyword {
+    padding: 0.12rem 0.45rem;
+    border-radius: 999px;
+    background: rgba(127, 127, 127, 0.15);
+    font-size: 0.65em;
+    line-height: 1.4;
+  }
+
+  @media (max-width: 640px) {
+    .project-banner {
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+
+    .project-banner__image {
+      aspect-ratio: 16 / 9;
+    }
+  }
+</style>
+
+{% assign sorted_projects = site.projects | sort: "date" | reverse %}
+
+<div class="project-list">
+  {% for project in sorted_projects %}
+    <article class="project-banner">
+      <div class="project-banner__media">
+        {% if project.image %}
+          <img
+            class="project-banner__image"
+            src="{{ project.image | relative_url }}"
+            alt="{{ project.image_alt | default: project.title | escape }}"
+            loading="lazy"
+          >
+        {% endif %}
+
+        {% if project.github or project.report or project.paper or project.patent or project.video %}
+          <nav class="project-banner__links" aria-label="Links for {{ project.title | escape }}">
+            {% if project.github %}
+              <a href="{{ project.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+            {% endif %}
+            {% if project.report %}
+              <a href="{{ project.report }}" target="_blank" rel="noopener noreferrer">Report</a>
+            {% endif %}
+            {% if project.paper %}
+              <a href="{{ project.paper }}" target="_blank" rel="noopener noreferrer">Paper</a>
+            {% endif %}
+            {% if project.patent %}
+              <a href="{{ project.patent }}" target="_blank" rel="noopener noreferrer">Patent</a>
+            {% endif %}
+            {% if project.video %}
+              <a href="{{ project.video }}" target="_blank" rel="noopener noreferrer">Video</a>
+            {% endif %}
+          </nav>
+        {% endif %}
+      </div>
+
+      <div class="project-banner__content">
+        <h2 class="project-banner__title">{{ project.title }}</h2>
+
+        {% if project.description %}
+          <p class="project-banner__description">{{ project.description }}</p>
+        {% endif %}
+
+        {% if project.keywords %}
+          <ul class="project-banner__keywords" aria-label="Project keywords">
+            {% for keyword in project.keywords %}
+              <li class="project-banner__keyword">{{ keyword }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+    </article>
+  {% endfor %}
+</div>

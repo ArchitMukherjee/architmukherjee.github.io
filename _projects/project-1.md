@@ -1,7 +1,17 @@
 ---
-title: "Project item number 1"
-excerpt: "Short description of project item number 1<br/><img src='/images/500x300.png'>"
-collection: project
+title: "Vision-Based Autonomous Guided Vehicle"
+date: 2023-04-01
+image: /images/AGV_Patent.png
+image_alt:
+description: "A low-cost autonomous guided vehicle developed for intelligent indoor navigation using an overhead camera, ArUco markers, computer vision, and A* path planning. The ROS-based system performs centralized localization, obstacle-map generation, route planning, and motor control through a Raspberry Pi and Arduino, providing a flexible alternative to conventional LiDAR- and track-based AGVs."
+keywords:
+keywords:
+  - Autonomous Robotics
+  - Computer Vision
+  - ROS
+  - Raspberry Pi
+  - Arduino
+github: https://github.com/ArchitMukherjee/computer-vision-based-agv
+report: /files/TARP_Report.pdf
+video: https://youtu.be/oP9RBAAhkjY
 ---
-
-This is an item in your project. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
